@@ -16,11 +16,6 @@ correctness of the techniques yield better results.
 Practice and teaching also focuses on the self, internal energy, and health through learning classical open-hand and 
 weapons forms. Underpinning the practice is the desire to promote the style and culture of these martial arts.
 
----
-
-## ✨ More details...
-
----
 
 ## 🥋 Grandmaster Lee's Wu Style Tai Chi
 
