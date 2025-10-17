@@ -11,6 +11,64 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .nav-as-list ul {
+            list-style: none;
+            padding: .25em .25em;
+            display: flex;
+            gap: .5em;
+            margin: 0;
+  
+        }
+
+        /* Nav items evenly spaced */
+        .nav-as-list li {
+            flex: 1;
+        }
+
+        /* Nav links styled like headers */
+        .nav-as-list a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            box-shadow: 0 6px 18px rgba(18, 18, 18, 0.08);
+        }
+
+        /* Individual colors matching h3s */
+        .nav-as-list a[href="#tai-chi"] { background-color: #a3b19a; }
+        .nav-as-list a[href="#qi-gong"] { background-color: #373446; }
+        .nav-as-list a[href="#kung-fu"] { background-color: #42070e; }
+        
+        .nav-as-list {
+            position: sticky;
+            top: 5px;
+            z-index: 100;
+            background: #f2f2f2; /* optional fallback background behind links */
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 2.5rem;
+            left:   2.5rem;
+            display: none;      /* hidden by default */
+            padding: 0.75rem 1rem;
+            background: #373446; /* match nav/header style */
+            color: white;
+            border-radius: 1rem;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(18, 18, 18, 0.08);
+            z-index: 100;
+        }
+
+        /* Show button when page is scrolled down using :target hack */
+        body:not(:root) #back-to-top {
+            display: block;
+        }
+
+        /* Optional hover effect */
+        #back-to-top:hover {
+            opacity: 0.8;
+        }
 
         body {
             /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
@@ -34,7 +92,7 @@
         h1 {
             font-size: 1.5em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: .25em;
             color: #2c3e50;
             padding: 1em;
             background: #373446;
@@ -105,9 +163,18 @@
 </head>
 <body>
     <div class="container">
+
         <div class="flex-container">
-            <h1> Sam Lee International Martial Arts Academy</h1>
+            <h1 id="top"> Sam Lee International Martial Arts Academy</h1>
         </div>
+        <nav class="nav-as-list">
+            <ul>
+                <li><a href="#tai-chi">Tai Chi</a></li>
+                <li><a href="#qi-gong">Qi Gong</a></li>
+                <li><a href="#kung-fu">Choy Lay Fut</a></li>
+            </ul>
+            <a id="back-to-top" href="#top">Back to Top</a>
+        </nav>
         <p>The Academy is best described as a continuation of the 
         teaching and practice of Grandmaster Sam Lee, with a mission to continue the transmission 
         of the knowledge, skill and compassion handed-down by him whilst preserving the highest respect 
