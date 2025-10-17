@@ -13,7 +13,9 @@
         }
 
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+            font-family: Arial, Helvetica, sans-serif;
+
             line-height: 1.8;
             background: #f5f5f5;
             color: #333;
@@ -30,10 +32,15 @@
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 1.5em;
+            text-align: center;
             margin-bottom: 20px;
             color: #2c3e50;
+            padding: 1em;
+            background: #373446;
+            color: #f2f2f2;
         }
+     
 
         h2 {
             font-size: 2em;
@@ -48,9 +55,25 @@
             font-size: 1.5em;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #16a085;
         }
-
+        #tai-chi, 
+        #qi-gong, 
+        #kung-fu{
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 1.5rem;
+            box-shadow: 0 6px 18px rgba(18, 18, 18, 0.08);
+        }
+        #tai-chi{
+            background-color: #a3b19a;
+        }
+        #qi-gong{
+            background-color: #373446;
+        }
+        #kung-fu{
+            background-color: #42070e;
+        }
         p {
             margin-bottom: 1.2em;
         }
@@ -82,15 +105,15 @@
 </head>
 <body>
     <div class="container">
-
-        <h1><span class="shamrock">☘️</span> Sam Lee International Martial Arts Academy</h1>
-
-        <p>The 'Sam Lee International Martial Arts Academy' is best described as a continuation of the 
+        <div class="flex-container">
+            <h1> Sam Lee International Martial Arts Academy</h1>
+        </div>
+        <p>The Academy is best described as a continuation of the 
         teaching and practice of Grandmaster Sam Lee, with a mission to continue the transmission 
         of the knowledge, skill and compassion handed-down by him whilst preserving the highest respect 
         he held for the traditional methods.</p>
 
-        <p><span class="shamrock">☘️</span> Like the symbol of Ireland and St. Patrick - the shamrock - Sifu Lee's practice was a triad of
+        <p> Like the symbol of Ireland and St. Patrick - the shamrock <span class="shamrock">☘️</span>- Sifu Lee's practice was a triad of
         Tai Chi, Qi Gong and Choy Lay Fut (Kung-fu).</p>
 
         <p>Primarily the focus is on people and community but also the self by way of
@@ -103,7 +126,7 @@
 
         <hr>
 
-        <h3>Grandmaster Lee's Wu Style Tai Chi</h3>
+        <h3 id="tai-chi">Wu Style Tai Chi</h3>
 
         <p>Following from Sifu Lee's teaching and practice his students now specializing in the traditional methods 
         and old long-forms of the Wu style Tai Chi Chuan, 
@@ -115,7 +138,7 @@
 
         <hr>
 
-        <h3>Grandmaster Lee's Qi Gong</h3>
+        <h3 id="qi-gong">Qi Gong</h3>
 
         <p>Through Qi Gong we start to become aware of the relationship between our consciousness (the self) and the Qi that gives us physical form and animates us.
         We build up an internal awareness and sensitivity that allows us to tune into our body and internal energy.
@@ -136,7 +159,7 @@
 
         <hr>
 
-        <h3>Grandmaster Lee's Choy Lay Fut</h3>
+        <h3 id="kung-fu">Choy Lay Fut</h3>
 
         <p>Sifu Lee was a student of the late Grand-master Lee Koon-Hung, 5th generation Choy Lay Fut Kung Fu.
         The first ever Hong Sing Koon was founded in 1839.
